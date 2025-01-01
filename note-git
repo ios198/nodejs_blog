@@ -3,7 +3,30 @@ git commit - m "text"
 git push -u origin main
 
 cài đặt các phần mềm
+src
+  public
+    css
+    img
+  resource
+    scss
+    views
+  index.js
+  nodemon.js
+  package.json
+  package-lock.json
+  .gitignore
 
-- nodemon : --save-dev
-- morgan : --save-dev : để thực hiện hiển thị request cho debug
-- express handlebars/pug: template eninges -> viết html dễ dàng hơn
+
+1,- nodemon : --save-dev
+"start": "nodemon --inspect src/index.js": có inspect riêng của nodemon để debug, tu dong bien dich lai
+2,- morgan : --save-dev : để thực hiện hiển thị request cho debug
+3,- express handlebars/pug: template eninges -> viết html dễ
+  dàng hơn
+4,- sass: xu ly css tien loi (phai xu ly render sang css de chay)
+    + scsss-> render-> css
+    + "watch": "node-sass --watch src/resources/scss/app.scss src/public/css/app.css",
+    + npm run watch
+    => trong thư mục /public/css
+5,- image static:
+    app.use(express.static(path.join(__dirname, "public")));
+    => trong thư mục /public/img

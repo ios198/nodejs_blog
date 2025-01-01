@@ -6,7 +6,9 @@ const app = express(); // gọi function
 
 const port = 3000;
 
-// http loggerß
+// Static file
+app.use(express.static(path.join(__dirname, "public")));
+// http logger
 app.use(morgan("combined"));
 
 // Template engine
