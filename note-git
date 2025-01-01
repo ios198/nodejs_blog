@@ -1,0 +1,9 @@
+git add .
+git commit - m "text"
+git push -u origin main
+
+cài đặt các phần mềm
+
+- nodemon : --save-dev
+- morgan : --save-dev : để thực hiện hiển thị request cho debug
+- express handlebars/pug: template eninges -> viết html dễ dàng hơn
